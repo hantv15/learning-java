@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -175,7 +177,66 @@ public class Main {
                 break;
             case 10:
                 System.out.println("Tìm giá trị lớn nhất và nhỏ nhất");
+                System.out.println("Vui lòng nhập số lượng của mảng");
 
+                int arrSize = input.nextInt();
+                ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+
+                for (int i = 0; i < arrSize; i++) {
+                    System.out.println("Nhập giá trị phần tử " + i);
+                    int inpNum = input.nextInt();
+                    myNumbers.add(inpNum);
+                }
+
+                Collections.sort(myNumbers);
+                System.out.println("Giá trị nhỏ nhất của mảng: " + myNumbers.get(0));
+                System.out.println("Giá trị lớn nhất của mảng: " + myNumbers.get(myNumbers.size() - 1));
+
+                break;
+            case 11:
+                System.out.println("Sắp xếp mảng");
+                System.out.println("Vui lòng nhập số lượng của mảng");
+
+                int arrSizeTwo = input.nextInt();
+                ArrayList<Integer> myNumbersTwo = new ArrayList<Integer>();
+
+                for (int i = 0; i < arrSizeTwo; i++) {
+                    System.out.println("Nhập giá trị phần tử " + i);
+                    int inpNum = input.nextInt();
+                    myNumbersTwo.add(inpNum);
+                }
+
+                Collections.sort(myNumbersTwo);
+                System.out.println(myNumbersTwo);
+
+                break;
+            case 12:
+                System.out.println("Tính tổng trung bình");
+                System.out.println("Vui lòng nhập số lượng của mảng");
+
+                int arrSizeThree = input.nextInt();
+                ArrayList<Integer> myNumbersThree = new ArrayList<Integer>();
+
+                for (int i = 0; i < arrSizeThree; i++) {
+                    System.out.println("Nhập giá trị phần tử " + i);
+                    int inpNum = input.nextInt();
+                    myNumbersThree.add(inpNum);
+                }
+
+                int sum = 0;
+
+                for (int i = 0; i < arrSizeThree; i++) {
+                    sum += myNumbersThree.get(i);
+                }
+
+                int avgSum = sum / arrSizeThree;
+
+                System.out.println("Total " + sum);
+                System.out.println("Average " + avgSum);
+
+                break;
+            case 13:
+                System.out.println("Quản lý danh sách sinh viên");
                 break;
             default:
                 System.out.println("Invalid input");
