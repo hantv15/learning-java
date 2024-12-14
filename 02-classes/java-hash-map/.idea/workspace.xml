@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c1dd858-6fac-43b0-97fd-7ac005106909" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../00-basics/java-syntax/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../00-basics/java-syntax/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../00-basics/java-syntax/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c1dd858-6fac-43b0-97fd-7ac005106909" name="Changes" comment="Java HashMap" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,11 +66,35 @@
       <option name="presentableId" value="Default" />
       <updated>1734079729270</updated>
       <workItem from="1734079730248" duration="633000" />
-      <workItem from="1734143747767" duration="1471000" />
+      <workItem from="1734143747767" duration="1676000" />
     </task>
+    <task id="LOCAL-00001" summary="Java HashMap">
+      <option name="closed" value="true" />
+      <created>1734145352517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734145352517</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java HashMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java HashMap" />
   </component>
 </project>
