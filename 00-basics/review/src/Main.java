@@ -237,9 +237,89 @@ public class Main {
                 break;
             case 13:
                 System.out.println("Quản lý danh sách sinh viên");
+                System.out.println("Vui lòng nhập số lượng sinh viên");
+                int arrSizeFour = input.nextInt();
+                input.nextLine();
+
+                ArrayList<Student> students = new ArrayList<Student>();
+
+                for (int i = 0; i < arrSizeFour; i++) {
+                    System.out.println("Nhập thông tin sinh viên thứ " + (i + 1) + ":");
+                    System.out.println("Tên: ");
+                    String name = input.nextLine();
+                    System.out.println("Tuổi: ");
+                    int age = input.nextInt();
+                    System.out.println("Điểm: ");
+                    float scope = input.nextFloat();
+                    input.nextLine();
+
+                    Student student = new Student(name, age, scope);
+                    students.add(student);
+                }
+
+                System.out.println("Danh sách sinh viên:");
+                for(Student sd : students) {
+                    sd.printInformation();
+                }
+
+                // Find student height score
+                Student studentHeightScore = students.get(0);
+                for (Student sd : students) {
+                    if (sd.getScore() > studentHeightScore.getScore()) {
+                        studentHeightScore = sd;
+                    }
+                }
+
+                System.out.println("Sinh viên có điểm cao nhất:");
+                studentHeightScore.printInformation();
+                input.close();
+                break;
+            case 14:
+                System.out.println("Kiểm tra chuỗi Palindrome");
+                System.out.println("Nhập chuỗi của bạn: ");
+                String string = input.nextLine();
+
+                if (isPalindrome(string)) {
+                    System.out.println(string + " là chuỗi Palindrome");
+                } else {
+                    System.out.println(string + " không phải là chuỗi Palindrome");
+                }
+                break;
+            case 15:
+                System.out.println("Điểm số lần xuất hiện của ký tự trong chuỗi");
+                System.out.println("Nhập chuỗi ký tự: ");
+                String txt = input.nextLine();
+                System.out.println("Nhập ký tự: ");
+                char cha = input.next().charAt(0);
+
+                int counter = 0;
+                char[] charArray = txt.toCharArray();
+
+                for (char i : charArray) {
+                    if (cha == i) {
+                        counter++;
+                    }
+                }
+
+                System.out.println("Ký tự " + cha + " lặp lại " + counter + " lần trong chuỗi " + txt);
                 break;
             default:
                 System.out.println("Invalid input");
         }
+    }
+
+    public static boolean isPalindrome(String input) {
+        int left = 0;
+        int right = input.length() - 1;
+
+        while (left < right) {
+            if (input.charAt(left) != input.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
     }
 }
